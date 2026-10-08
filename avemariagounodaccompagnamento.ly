@@ -2,26 +2,26 @@
 \language "italiano"
 
 \header {
-  title = "Ave Maria - Linea di Accompagnamento (Note Lunghe)"
-  composer = "J.S. Bach / C. Gounod"
+  title = "Tu sarai profeta - Violino (Accompagnamento)"
+\version "2.22.1"
+\language "italiano"
+
+\header {
+  title = "Tu sarai profeta - Violino"
+  subtitle = "Note lunghe (Solo accompagnamento solista)"
+  composer = "M. Frisina"
 }
 
 \score {
   \relative do'' {
     \clef treble
+    \key lab \major
     \time 4/4
-    \tempo "Moderato"
+    \tempo "Andante"
     
-    % Battute 1-8
-    do1 | do1 | fa,1 | sol1 | mi1 | do1 | re1 | sol1 |
-    % Battute 9-16
-    sol1 | do,1 | fa1 | sol1 | mi1 | do1 | fa1 | sol1 |
-    % Battute 17-24
-    sol1 | do,1 | fa1 | mi1 | fa1 | sol1 | la1 | re,1 |
-    % Battute 25-32
-    sol1 | do,1 | fa1 | mi1 | re1 | do1 | si1 | la1 |
-    % Battute 33-39
-    re1 | sol1 | do,1 | fa1 | sol1 | do,1 | do1 \bar "|."
+    % Note lunghe coordinate con la parte solista iniziale
+    do1\p | reb1 | do1 | reb1 |
+    mib1 | lab1 | sib1 | do1 \bar "|."
   }
   \layout { }
 }
